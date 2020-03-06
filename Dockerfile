@@ -4,7 +4,7 @@ COPY package.json .
 RUN npm config set strict-ssl false
 RUN npm install
 COPY . .
-RUN npm rum build
+RUN npm run build
 
 FROM nginx
 EXPOSE 80
